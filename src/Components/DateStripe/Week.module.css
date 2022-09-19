@@ -1,0 +1,58 @@
+.button{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+.container{
+    padding: 15px;
+    font-weight: 300;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 5px;
+    margin-right: 7px;
+}
+.container:hover{
+    box-shadow: inset 100px 0 0 0 #2113d5;
+    color: white;
+}
+.day{
+    font-size: 25px;
+    background-color: transparent;
+    border: 0;
+}
+.changeAnimation {
+	-webkit-animation: changeAnimation 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: changeAnimation 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+ @-webkit-keyframes changeAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes changeAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .today *{
+    color: yellow;
+  }
+  .wrapper{
+    pointer-events: none;
+  }
+  .active{
+    background-color: white;
+  }
+  .active *{
+    color: black;
+  }

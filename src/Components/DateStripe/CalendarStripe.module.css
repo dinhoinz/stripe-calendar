@@ -1,0 +1,17 @@
+
+.weekDays, .weekDays > div {
+    display: flex;
+    flex-flow: row;
+}
+.container{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.month{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
